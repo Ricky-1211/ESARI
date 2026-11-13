@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ivory text-charcoal font-sans;
+    background-color: #FAF6EF;
+    color: #292326;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-charcoal;
+  }
+}
+
+/* Luxury custom effects */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A38148 0%, #C9A66B 50%, #DFC698 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(201, 166, 107, 0.35);
+}
+
+.gold-border-solid {
+  border-color: #C9A66B;
+}
+
+.burgundy-glass {
+  background: rgba(100, 28, 50, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.ivory-glass {
+  background: rgba(250, 246, 239, 0.92);
+  backdrop-filter: blur(16px);
+}
+
+/* Subtle luxury grain / pattern */
+.luxury-pattern {
+  background-color: #FAF6EF;
+  background-image: radial-gradient(rgba(201, 166, 107, 0.12) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+/* Smooth transitions */
+.transition-luxury {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Image zoom effect */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.06);
+}
